@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Projeto Driven Eats</title>
+</head>
+<body>
+    <div class="barra-topo">
+        <h1 class="título">Driven Eats</h1>
+        <p class="subtitulo">Sua comida em 6 minutos</p>
+    </div>
+    <div class="cardápio">
+        <div class="selecionar">
+            <p class="texto">Primeiro, seu prato</p>
+            <div class="opções pratos">
+                <button class="opção-1" onclick="selecionarPrato(this)">
+                    <img src="projeto__driven-eats__imagens/projeto__driven-eats__imagens/pf_frango.jpg"/>
+                    <p class="descrição1">Frango</p>
+                    <p class="descrição2">Acompanha, arroz feijão e salada</p>
+                    <p class="preço">14.90</p>
+                </button>
+                <button class="opção-2" onclick="selecionarPrato(this)">
+                    <img src="projeto__driven-eats__imagens/projeto__driven-eats__imagens/pf_carne.jpg"/>
+                    <p class="descrição1">Carne</p>
+                    <p class="descrição2">Acompanha arroz, feijão, batata frita e salada</p>
+                    <p class="preço">20.90</p>
+                </button>
+                <button class="opção-3" onclick="selecionarPrato(this)">
+                    <img src="projeto__driven-eats__imagens/projeto__driven-eats__imagens/pf_calabresa.png"/>
+                    <p class="descrição1">Calabresa</p>
+                    <p class="descrição2">Acompanha arroz, feijão e batata frita</p>
+                    <p class="preço">17.90</p>
+                </button>
+            </div>
+        </div> 
+      
+        <div class="selecionar">
+            <p class="texto">Agora, sua bebida</p>
+            <div class="opções bebidas">
+                <button class="opção-1" onclick="selecionarBebida(this)">
+                    <img src="projeto__driven-eats__imagens/projeto__driven-eats__imagens/coca.png"/>
+                    <p class="descrição1">Coca-cola</p>
+                    <p class="descrição2">Lata 350ml</p>
+                    <p class="preço">4.90</p>
+                </button>
+                <button class="opção-2" onclick="selecionarBebida(this)">
+                    <img src="projeto__driven-eats__imagens/projeto__driven-eats__imagens/fanta (2).png"/>
+                    <p class="descrição1">Fanta laranja</p>
+                    <p class="descrição2">Lata 350ml</p>
+                    <p class="preço">3.90</p>
+                </button>
+                <button class="opção-3" onclick="selecionarBebida(this)">
+                    <img src="projeto__driven-eats__imagens/projeto__driven-eats__imagens/suco.png"/>
+                    <p class="descrição1">Suco</p>
+                    <p class="descrição2">Copo 500ml</p>
+                    <p class="preço">8.90</p>    
+                </button>
+            </div>
+        </div>
+        
+        <div class="selecionar">
+            <p class="texto">Por fim, sua sobremesa</p>
+            <div class="opções sobremesas">
+                <button class="opção-1" onclick="selecionarSobremesa(this)">
+                    <img src="projeto__driven-eats__imagens/projeto__driven-eats__imagens/brownie.jpg"/>
+                    <p class="descrição1">Brownie</p>
+                    <p class="descrição2">Brownie chocolate</p>
+                    <p class="preço">6.90</p>
+                </button>
+                <button class="opção-2" onclick="selecionarSobremesa(this)">
+                    <img src="projeto__driven-eats__imagens/projeto__driven-eats__imagens/pudim.jpg"/>
+                    <p class="descrição1">Pudim</p>
+                    <p class="descrição2">Pudim de leite</p>
+                    <p class="preço">5.90</p>
+                </button>
+                <button class="opção-3" onclick="selecionarSobremesa(this)">
+                    <img src="projeto__driven-eats__imagens/projeto__driven-eats__imagens/mouse.jpg"/>
+                    <p class="descrição1">Mousse</p>
+                    <p class="descrição2">Mousse de maracujá</p>
+                    <p class="preço">4.90</p>
+                </button>  
+            </div>  
+        </div>
+    </div>
+    
+    <div class="barra-inferior">
+        <button class="continuar" onclick="fecharPedido()">Selecione os 3 itens para fechar o pedido</button>
+    </div>
+
+    <div class="tela-pedido escondido">
+        <div class="dados-pedido">
+            <p class="linha-pedido">Aqui estão os dados do seu pedido!</p>
+            <p class="linha-prato">Prato</p>
+            <p class="linha-bebida">Bebiba</p>
+            <p class="linha-sobremesa">Sobremesa</p>
+            <p class="linha-total">Total</p>           
+            <a href="https://web.whatsapp.com/" class="pedido-whatsapp">Tudo certo, pode pedir!</a>
+            <button class="cancelar" onclick="cancelar()">Cancelar</button>
+        </div>
+    </div>
+
+    <script src="driven.js"></script>    
+</body>
+</html>
