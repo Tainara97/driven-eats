@@ -71,7 +71,7 @@ function fecharPedido() {
     document.querySelector(".linha-total").innerHTML = textoTotal;
     
     const textoWhatsapp = encodeURIComponent(`Olá, gostaria de fazer o pedido:\n - Prato: ${prato}\n - Bebida: ${bebida}\n - Sobremesa: ${sobremesa}\n${textoTotal}`);
-    const linkWhatsapp = "https://wa.me/5549999843076?text=" + textoWhatsapp;
+    const linkWhatsapp = "https://wa.me/5549999327227?text=" + textoWhatsapp;
     document.querySelector(".pedido-whatsapp").href = linkWhatsapp;
 }
 
