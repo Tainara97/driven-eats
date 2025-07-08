@@ -5,8 +5,7 @@ Projeto que simula um aplicativo de delivery.
 O usuário escolhe um prato principal, uma bebida e uma sobremesa. Após selecionar os três, é possível finalizar o pedido, que será redirecionado via WhatsApp com os dados preenchidos.
 
 ## 📸 Demonstração
-
-![driven-eats](https://github.com/user-attachments/assets/3dfda811-b051-4d73-8383-7c655f3c2210)
+![driven-eats](https://github.com/user-attachments/assets/d5a86d0e-134f-48a7-8966-f1f79835b421)
 
 ## 🛠 Tecnologias utilizadas
 
